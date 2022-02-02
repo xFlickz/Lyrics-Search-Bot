@@ -30,7 +30,7 @@ async def start(bot, update):
 	
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
-    HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song chat @XFlick. \nBot By @EKBOTZ_UPDATE "
+    HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song chat . \nBot By @XFlick "
     HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/xFlickbot"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/M-fazin/Lyrics-Search-Bot")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
